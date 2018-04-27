@@ -6,4 +6,6 @@ Rails.application.routes.draw do
 
   # have to add permissions and admin routes
 
+  get '/auth/facebook/callback' => 'sessions#create'
+
 end
